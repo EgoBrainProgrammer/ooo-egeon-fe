@@ -1,0 +1,20 @@
+[
+    {
+        "name": "address",
+        "data": "Сахалинская область, г. Холмск, Советская улица, 93а, офис 248",
+        "icon": "mdi-map-marker-radius",
+        "href": "https://2gis.ru/yuzhnosakhalinsk/geo/70030076154809263/142.045859%2C47.055017?m=142.047825%2C47.054313%2F18.2"
+    },
+    {
+        "name": "phone",
+        "data": "+7(900)431-45-95",
+        "icon": "mdi-phone",
+        "href": "tel:+79004314595"
+    },
+    {
+        "name": "email",
+        "data": "inbox@it-perspektiva.com",
+        "icon": "mdi-at",
+        "href": "mailto:inbox@it-perspektiva.com"
+    }
+]

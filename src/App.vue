@@ -1,26 +1,78 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-app>
+        <Header :height="headerHeight"></Header>
+        <router-view></router-view>
+    </v-app>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import app from "@/main";
+import { ref, provide, onMounted } from "vue";
+import { useDisplay, useTheme } from "vuetify";
+import { ajaxGetStatic } from "@/ajax";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+//--Components--
+import Header from "@/components/pages/Header.vue";
+
+//--Common constants--
+const { mobile } = useDisplay();
+app.config.globalProperties.$isMobile = mobile.value;
+provide("mobile", mobile);
+const headerHeight = 100;
+
+//--Reactive constants--
+const showsnackbar = ref(false);
+const organization = ref([]);
+provide("organization", organization);
+
+//--Hooks--
+onMounted(() => {
+    ajaxGetStatic("/organization.json", (response) => {
+        organization.value = response.data;
+    });
+});
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+p,
+ul {
+    line-height: 1.75;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.hover1:hover {
+    color: black;
+}
+
+.hover2:hover {
+    color: white;
+}
+
+.hovershd:hover {
+    text-shadow: 3px 3px 2px black;
+}
+
+.hovershd1:hover {
+    text-shadow: 2px 2px 2px black;
+}
+
+.hovershd2:hover {
+    text-shadow: 1px 1px 1px black;
+}
+
+.wsspan {
+    /* color: black;
+    text-shadow: 1px 1px 6px grey; */
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.cardColor {
+    /* background-color: rgba(200, 200, 200, 0.5) !important; */
+    background-color: rgba(200, 200, 200, 0.25) !important;
+    border-color: white !important;
 }
 </style>
