@@ -25,6 +25,11 @@ const getters = {
         return process.env.VUE_APP_ORGANIZATIONNAME;
     },
 
+    orgNameTitle: () => {
+        //return process.env.VUE_APP_ORGANIZATIONNAMETITLE;
+        //return ["Общество с ограниченной ответственностью", "«ЭГЕОН»"];
+    },
+
     env: () => {
         return process.env.NODE_ENV;
     },

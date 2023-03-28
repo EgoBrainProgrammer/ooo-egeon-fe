@@ -1,7 +1,9 @@
 <template>
     <v-app>
         <Header :height="headerHeight"></Header>
-        <router-view></router-view>
+        <v-main>
+            <router-view></router-view>
+        </v-main>
     </v-app>
 </template>
 
@@ -18,7 +20,7 @@ import Header from "@/components/pages/Header.vue";
 const { mobile } = useDisplay();
 app.config.globalProperties.$isMobile = mobile.value;
 provide("mobile", mobile);
-const headerHeight = 100;
+const headerHeight = 124;
 
 //--Reactive constants--
 const showsnackbar = ref(false);
@@ -70,9 +72,13 @@ ul {
     text-shadow: 2px 2px 3px black;
 }
 
+.textshadow {
+    text-shadow: 1px 1px 2px black;
+}
+
 .cardColor {
     /* background-color: rgba(200, 200, 200, 0.5) !important; */
-    background-color: rgba(200, 200, 200, 0.25) !important;
+    background-color: rgba(200, 200, 200, 0.75) !important;
     border-color: white !important;
 }
 </style>
