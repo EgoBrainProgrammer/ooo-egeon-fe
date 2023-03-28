@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "del /f .env && copy /y .env.dev .env && vue-cli-service serve",
+    "build": "del /f .env && copy /y .env.prod .env | upload.cmd",
+    "buildtest": "del /f .env && copy /y .env.test .env | uploadtest.cmd"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
