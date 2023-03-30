@@ -6,6 +6,7 @@ import MainPage from '@/components/pages/MainPage.vue'
 
 import Works from '@/components/pages/works/Works.vue'
 import Services from '@/components/pages/services/Services.vue'
+import Consumers from '@/components/pages/consumers/Consumers.vue'
 //--Components--END----------------------------------------------------------------------------------------------//
 
 const routes = [
@@ -13,6 +14,7 @@ const routes = [
     { path: '/', component: MainPage },
     { path: '/ourworks', component: Works },
     { path: '/services', component: Services },
+    { path: '/consumers', component: Consumers },
 ];
 
 const router = createRouter({

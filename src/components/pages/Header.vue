@@ -92,11 +92,11 @@ const links = [
     },
     {
         text: "Наши заказчики",
-        route: "/",
+        route: "/consumers",
     },
     {
         text: "Сертификаты лицензии",
-        route: "/partners",
+        route: "/certs",
     },
     {
         text: "Контакты",
