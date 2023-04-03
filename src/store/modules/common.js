@@ -54,6 +54,10 @@ const mutations = {
 };
 
 const actions = {
+    open(state, url) {
+        window.open(url);
+    },
+
     opentab(state, url) {
         window.open(url, '_blank').focus();
     },

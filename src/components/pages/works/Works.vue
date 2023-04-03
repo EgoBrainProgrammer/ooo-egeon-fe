@@ -6,7 +6,7 @@
                 <div class="text-body-1 text-lg-h4 ma-lg-14 font-weight-black">
                         <div v-html="work.text"></div>
                 </div>
-                <v-img v-for="(img, idx) in work.pictures" :key="idx" class="mb-2" :src="`/pictures/${img}`"></v-img>
+                <v-img v-for="(img, idx) in work.pictures" :key="idx" class="my-2 my-sm-8" :src="`/pictures/works/${img}`"></v-img>
             </v-card>
         </div>
     </v-parallax>
@@ -27,23 +27,17 @@ import { ajaxGet } from "@/ajax";
 const route = useRoute();
 
 //--Reactive constatns--
-const text = ref("");
-const work = ref({ 
-    "id": 7, 
-    "title": 
-    "Внутренняя отделка", 
-    "pictures": ["work5.jpg"], 
-    "text": "Текс содержание" 
-});
+const work = ref({});
 
 //--Hooks--
 onMounted(() => {
     ajaxGet(
-        "/works",
-        route.query.work,
+        "/works/" + route.query.work,
+        null,
         (response) => {
+            console.log(response)
             if ([200, 201].includes(response.status))
-                text.value = response.data;
+                work.value = response.data;
         }
     );
 });

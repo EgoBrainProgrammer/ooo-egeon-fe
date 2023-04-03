@@ -20,16 +20,11 @@
                                 <template v-slot:default="{ isHovering, prps }">
                                     <v-card height="242" class="pointer" v-bind="prps" :elevation="isHovering ? 16 : 4"
                                         @click="$router.push('/ourworks?work=' + col.id)">
-                                        <!-- <v-img :src="`/pictures/${col.picture}`" height="242" cover>
-                                            <div class="h-100 d-flex align-end pa-4 wsspan text-h6">
-                                                {{ col.title }}
-                                            </div>
-                                        </v-img> -->
                                         <v-carousel cycle :show-arrows="false" hide-delimiters height="242">
                                             <v-carousel-item v-for="(slide, i) in col.pictures" :key="i">
                                                 <v-sheet height="100%" tile>
                                                     <div class="d-flex fill-height justify-center align-center">
-                                                        <v-img :src="`/pictures/${slide}`" height="242" cover>
+                                                        <v-img :src="`/pictures/works/${slide}`" height="242" cover>
                                                             <div class="h-100 d-flex align-end pa-4 wsspan text-h6">
                                                                 {{ col.title }}
                                                             </div>
@@ -46,10 +41,6 @@
                 </template>
             </v-container>
         </div>
-        <!-- <div class="d-flex justify-center text-h5 text-lg-h4 font-weight-bold wsspan">
-            <div :class="`${$isMobile ? 'w-75' : 'w-50'}`" v-html="maintext"></div>
-        </div> -->
-        <!-- </v-card> -->
     </v-parallax>
 </template>
 

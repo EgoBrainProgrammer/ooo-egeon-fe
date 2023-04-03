@@ -1,67 +1,72 @@
 [
     [{
         "id": 1,
-        "title": "Замена поясов РВС",
-        "pictures":  ["rvs1.png", "rvs2.png"]
+        "title": "Антикоррозионное покрытие РВС",
+        "pictures":  ["IMG-20230310-WA0114.jpg", "IMG-20230310-WA0116.jpg"]
     },
     {
         "id": 2,
-        "title": "Замена кровли РВС",
-        "pictures":  ["rvsc1.png", "rvsc2.png"]
+        "title": "Внутренние и наружные инженерные сети",
+        "pictures":  ["IMG-20230310-WA0109.jpg", "IMG-20230310-WA0112.jpg"]
     },
     {
         "id": 3,
-        "title": "Антикоррозионное покрытие",
-        "pictures":  ["work3.jpg"]
+        "title": "Внутренняя отделка",
+        "pictures":  ["IMG-20230310-WA0113.jpg", "otdelka.jpeg"]
     },
     {
         "id": 4,
-        "title": "Пескоструйная обработка металлов",
-        "pictures":  ["work4.jpg"]
+        "title": "Замена кровель РВС",
+        "pictures":  ["IMG-20230310-WA0096.jpg", "IMG-20230310-WA0159.jpg"]
     }],
     [{
         "id": 5,
-        "title": "Изготовление узла задвижек",
-        "pictures":  ["work5.jpg"]
+        "title": "Замена поясов РВС",
+        "pictures":  ["IMG-20230310-WA0137.jpg", "IMG-20230310-WA0141.jpg"]
     },
     {
         "id": 6,
-        "title": "Лестница шахтная 4 (ЛШ4)",
-        "pictures":  ["work5.jpg"]
+        "title": "Замена труб котельных с. Чехов",
+        "pictures":  ["IMG-20230310-WA0198.jpg", "IMG-20230310-WA0200.jpg"]
     },
     {
         "id": 7,
-        "title": "Внутренняя отделка",
-        "pictures":  ["work5.jpg"]
+        "title": "Иготовление летницы шахтной 4 (ЛШ4)",
+        "pictures":  ["IMG-20230310-WA0121.jpg", "IMG-20230310-WA0124.jpg"]
     },
     {
         "id": 8,
-        "title": "Кровля ПАО «Сахалинэнерго»",
-        "pictures":  ["work5.jpg"]
+        "title": "Изготвление узла задвижек",
+        "pictures":  ["uzla1.jpeg", "uzla2.jpeg"]
     }],
     [{
         "id": 9,
-        "title": "Ремонт кровли АЗК",
-        "pictures":  ["work5.jpg"]
+        "title": "Кровля ПАО «Сахалинэнерго»",
+        "pictures":  ["IMG-20230310-WA0123.jpg", "IMG-20230310-WA0179.jpg"]
     },
     {
         "id": 10,
-        "title": "Периметральное ограждение",
-        "pictures":  ["work5.jpg"]
+        "title": "Навес АЗК 551",
+        "pictures":  ["IMG-20230310-WA0196.jpg", "IMG-20230310-WA019677.jpeg"]
     },
     {
         "id": 11,
-        "title": "Навес АЗК 551",
-        "pictures":  ["work5.jpg"]
+        "title": "Периметральное ограждение",
+        "pictures":  ["IMG-20230310-WA0125.jpg", "IMG-20230310-WA01251.jpeg", "IMG-20230310-WA01252.jpeg", "IMG-20230310-WA01253.jpeg"]
     },
     {
         "id": 12,
-        "title": "Внутренние и наружные инженерные сети",
-        "pictures":  ["work5.jpg"]
+        "title": "Пескоструйная обработка металлов",
+        "pictures":  ["IMG-20230310-WA0115.jpg", "IMG-20230310-WA0174.jpg"]
     }],
     [{
         "id": 13,
-        "title": "Замена труб котельных с.Чехов",
-        "pictures":  ["work5.jpg"]
+        "title": "Ремонт кровли АЗК",
+        "pictures":  ["azk.jpeg", "azk1.jpeg"]
+    },
+    {
+        "id": 14,
+        "title": "Ремонт технологического трубопровода",
+        "pictures":  ["trub.jpeg", "trub1.jpeg"]
     }]
 ]

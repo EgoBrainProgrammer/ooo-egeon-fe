@@ -84,7 +84,7 @@ const props = defineProps({
 const links = [
     {
         text: "О компании",
-        route: "/",
+        route: "/about",
     },
     {
         text: "Услуги",
