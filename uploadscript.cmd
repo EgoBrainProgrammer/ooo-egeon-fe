@@ -7,4 +7,5 @@ call mv ../jsons/*.json ./ 2>/dev/null || :
 put public.7z
 call 7z x public.7z -y
 call rm -f public.7z
+call ~/ooo-egeon-be/admscripts/stop.sh
 exit
