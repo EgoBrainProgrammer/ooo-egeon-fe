@@ -81,4 +81,13 @@ ul {
     background-color: rgba(200, 200, 200, 0.75) !important;
     border-color: white !important;
 }
+
+.bigchip {
+    height: auto;
+    min-height: 72px;
+    white-space: pre-wrap;
+    background-color: gray;
+    border-radius: 15px;
+    border-width: 2px;
+}
 </style>

@@ -2,13 +2,15 @@
     <v-parallax :src="`/pictures/work${Math.round(Math.random() * 4 + 1)}.jpg`" height="100%">
         <div class="d-flex justify-center">
             <v-card class="cardColor ma-2 ma-sm-12 pa-2 px-sm-12">
+                <div class="text-h4 text-lg-h2 text-center my-16 font-weight-black">Контакты</div>
                 <div class="ma-lg-12">
                         <v-row v-for="(item, idx) in organization" :key="idx" class="my-2">
-                            <v-chip class="text-body-1 text-lg-h4 font-weight-medium pa-3 ma-4 wsspan"
+                            <v-chip class="bigchip text-body-1 text-lg-h4 font-weight-medium pa-3 ma-4 wsspan"
+                                variant="outlined"
                                 @click="() => { if (item.href) $store.dispatch('opentab', item.href); }"><v-icon
                                     v-if="item.icon" class="mr-2">{{ item.icon }}</v-icon>{{ item.data }}</v-chip>
                         </v-row>
-                    </div>
+                </div>
                 <div style="position:relative;overflow:hidden;">
                     <a href="https://yandex.ru/maps/20164/holmsk/?utm_medium=mapframe&utm_source=maps"
                         style="color:#eee;font-size:12px;position:absolute;top:0px;">Холмск</a>
@@ -37,12 +39,3 @@ import { inject } from "vue";
 //--Pure constants--
 const organization = inject("organization");
 </script>
-
-<style scoped>
-.v-chip {
-    height: auto;
-    min-height: 48px;
-    white-space: pre-wrap;
-    background-color: gray;
-}
-</style>
