@@ -15,9 +15,6 @@
                     </v-col>
                 </v-row>
             </v-col>
-            <!-- <v-col cols="6" lg="2" class="pointer d-flex align-center" @click="$router.push('/')">
-                <span class="text-body-2 text-sm-h5 mr-5" style="font-family: Andale Mono, monospace; line-height: 100%;">{{ $store.getters.orgName }}</span>
-            </v-col> -->
             <!-- NORMAL -->
             <v-col cols="8" class="d-none d-lg-flex align-center justify-center">
                 <span v-for="(link, idx) in links" :key="idx" class="mx-12 pointer text-subtitle-1"
@@ -52,7 +49,7 @@
 
                     <v-list>
                         <v-list-item v-for="(link, idx) in links" :key="idx">
-                            <v-list-item-title class="text-caption" style="cursor: pointer"
+                            <v-list-item-title class="text-body-1" style="cursor: pointer"
                                 @click="$router.push(link.route)">{{ link.text
                                 }}</v-list-item-title>
                         </v-list-item>
