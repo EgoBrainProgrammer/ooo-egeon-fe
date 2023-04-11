@@ -1,7 +1,8 @@
 <template>
     <v-parallax :src="`/pictures/work${Math.round(Math.random() * 4 + 1)}.jpg`" height="100%">
         <div class="d-flex justify-center">
-            <v-card class="cardColor ma-2 ma-sm-12 pa-2 px-sm-12 text-h3 wsspan font-weight-medium">
+            <v-card class="cardColor ma-2 ma-sm-8 pa-2 px-sm-12 text-h3 wsspan font-weight-medium">
+                <div class="text-center text-h4 text-lg-h2 my-2 my-sm-16 font-weight-black">О компании</div>
                 <p>Общество с ограниченной ответственностью «ЭГЕОН» является молодой и перспективно развивающейся компанией,
                     ведущей свою деятельность с 2020 года.</p>
                 <p>Мы ориентированы на удовлетворение спроса широкого круга Заказчиков от крупных нефтегазовых компаний до

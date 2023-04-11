@@ -1,7 +1,7 @@
 <template>
     <v-parallax :src="`/pictures/work${Math.round(Math.random() * 4 + 1)}.jpg`" height="100%">
         <div class="d-flex justify-center">
-            <v-card class="cardColor ma-2 ma-sm-12 pa-2 px-sm-12">
+            <v-card class="cardColor ma-2 ma-sm-8 pa-2 px-sm-12">
                 <div class="text-h4 text-lg-h2 text-center my-2 my-sm-16 font-weight-black">Контакты</div>
                 <div class="ma-lg-12">
                         <v-row v-for="(item, idx) in organization" :key="idx" class="my-2">

@@ -9,15 +9,11 @@
                 <v-btn prepend-icon="mdi-file-pdf-box" class="mt-4"
                     @click="$store.dispatch('open', '/files/СертификатСоответсвияОООЭГЕОН.pdf')">Открыть PDF</v-btn>
             </v-card>
-        </div> -->
-        <div class="d-flex justify-center mt-1">
-            <div :class="`text-h5 text-lg-h4 text-center font-weight-black text-indigo ${$isMobile ? 'w-75' : 'w-50'}`"
-                :style="$isMobile ? '' : 'line-height: 275%;'">
-                Сертификаты и лицензии
-            </div>
-        </div>
-        <div>
-            <v-container class="text-center wsspan">
+        </div> -->        
+        <v-card class="cardColor ma-2 ma-sm-8 pa-2 px-sm-12 text-h3 wsspan font-weight-medium"
+            style="min-height: 100%;">
+            <div class="text-center text-h4 text-lg-h2 my-2 my-sm-16 font-weight-black">Сертификаты и лицензии</div>
+            <!-- <v-container class="text-center wsspan"> -->
                 <template v-for="(row, idx) in certs" :key="idx">
                     <v-row align="center">
                         <v-col :cols="$isMobile ? 12 : cols" v-for="(col, icol) in row" :key="icol">
@@ -47,8 +43,8 @@
                         </v-col>
                     </v-row>
                 </template>
-            </v-container>
-        </div>
+            <!-- </v-container> -->
+        </v-card>
     </v-parallax>
 </template>
 
