@@ -39,7 +39,6 @@ onMounted(() => {
         "/works/" + route.query.work,
         null,
         (response) => {
-            console.log(response)
             if ([200, 201].includes(response.status))
                 work.value = response.data;
         }

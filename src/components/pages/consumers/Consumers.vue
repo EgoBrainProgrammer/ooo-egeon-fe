@@ -14,7 +14,7 @@
                 <v-row v-for="(consumer, idx) in consumers" :key="idx" class="my-2">
                     <v-chip class="bigchip text-body-1 text-lg-h4 font-weight-medium pa-3 ma-4 wsspan"
                         variant="outlined"
-                        @click="() => {}">{{ consumer.title }}</v-chip>
+                        @click="() => {}"> — {{ consumer.title }}</v-chip>
                 </v-row>
             </v-card>
         </div>

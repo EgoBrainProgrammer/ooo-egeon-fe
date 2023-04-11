@@ -23,9 +23,9 @@
                                         <v-carousel cycle :show-arrows="false" hide-delimiters height="242">
                                             <v-carousel-item v-for="(slide, i) in col.pictures" :key="i">
                                                 <v-sheet height="100%" tile>
-                                                    <div class="d-flex fill-height justify-center align-center">
+                                                    <div class="d-flex fill-height justify-center align-center text-start">
                                                         <v-img :src="`/pictures/works/${slide}`" height="242" cover>
-                                                            <div class="h-100 d-flex align-end pa-4 wsspan text-h6">
+                                                            <div class="h-100 d-flex align-end pa-4 wsspanw text-h6">
                                                                 {{ col.title }}
                                                             </div>
                                                         </v-img>
@@ -56,17 +56,9 @@ import { ajaxGetStatic } from "@/ajax";
 
 const works = ref([]);
 const cols = ref(12);
-const maintext = ref("");
 
 //--Hooks--
 onMounted(() => {
-    // ajaxGetStatic("/mainpage.json", (response) => {
-    //     works.value = response.data.works;
-    //     let max = 0;
-    //     works.value.forEach(x => { if (x.length > max) max = x.length });
-    //     cols.value = 12 / max;
-    //     maintext.value = response.data.maintext;
-    // });
     ajaxGetStatic("/ourworks.json", (response) => {
         works.value = response.data;
         let max = 0;

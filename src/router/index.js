@@ -21,6 +21,7 @@ const routes = [
     { path: '/services', component: Services },
     { path: '/consumers', component: Consumers },
     { path: '/cocertslicenses', alias: '/certs', component: CertsLicenses },
+    { path: '/about', component: About },
 ];
 
 const router = createRouter({

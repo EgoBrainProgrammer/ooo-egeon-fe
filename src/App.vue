@@ -66,8 +66,13 @@ ul {
 }
 
 .wsspan {
-    /* color: black;
-    text-shadow: 1px 1px 6px grey; */
+    color: black;
+    text-shadow: 1px 1px 6px grey;
+    /*color: white;
+    text-shadow: 2px 2px 3px black;*/
+}
+
+.wsspanw {
     color: white;
     text-shadow: 2px 2px 3px black;
 }
@@ -78,7 +83,7 @@ ul {
 
 .cardColor {
     /* background-color: rgba(200, 200, 200, 0.5) !important; */
-    background-color: rgba(200, 200, 200, 0.75) !important;
+    background-color: rgba(200, 200, 200, 0.35) !important;
     border-color: white !important;
 }
 
