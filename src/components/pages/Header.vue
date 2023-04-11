@@ -26,17 +26,17 @@
                 <v-container>
                     <v-row no-gutters align="center">
                         <v-btn size="small" icon @click="$store.dispatch('opentab',
-                            findIfNull(organization, x => x.name == 'phone', 'href').href)">
+                            findIfNull(organization, x => x.name == 'phone_h', 'href').href)">
                             <v-icon>mdi-phone</v-icon>
                         </v-btn>
-                        {{ findIfNull(organization, x => x.name == "phone").data }}
+                        {{ findIfNull(organization, x => x.name == "phone_h").data }}
                     </v-row>
                     <v-row no-gutters align="center">
                         <v-btn size="small" icon @click="$store.dispatch('opentab',
-                            findIfNull(organization, x => x.name == 'email', 'href').href)">
+                            findIfNull(organization, x => x.name == 'email_h', 'href').href)">
                             <v-icon>mdi-email</v-icon>
                         </v-btn>
-                        {{ findIfNull(organization, x => x.name == "email").data }}
+                        {{ findIfNull(organization, x => x.name == "email_h").data }}
                     </v-row>
                 </v-container>
             </v-col>

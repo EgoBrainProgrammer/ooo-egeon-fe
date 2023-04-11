@@ -30,4 +30,6 @@ export default {
 <style scoped>
 p {
     text-indent: 2em;
-}</style>
+    font-size: v-bind($isMobile ? '0.25em' : '1em');
+}
+</style>
