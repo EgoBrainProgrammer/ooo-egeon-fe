@@ -10,8 +10,7 @@
                     @click="$store.dispatch('open', '/files/СертификатСоответсвияОООЭГЕОН.pdf')">Открыть PDF</v-btn>
             </v-card>
         </div> -->        
-        <v-card class="cardColor ma-2 ma-sm-8 pa-2 px-sm-12 text-h3 wsspan font-weight-medium"
-            style="min-height: 100%;">
+        <v-card class="cardColor ma-2 pb-sm-6 ma-sm-8 pa-2 px-sm-12 text-h3 wsspan font-weight-medium">
             <div class="text-center text-h4 text-lg-h2 my-2 my-sm-16 font-weight-black">Сертификаты и лицензии</div>
             <!-- <v-container class="text-center wsspan"> -->
                 <template v-for="(row, idx) in certs" :key="idx">

@@ -3,20 +3,20 @@
         {
             "id": 1,
             "title": "Сертификат менеджмента",
-            "pictures":  [""],
-            "file": ""
+            "pictures":  ["certooo.png"],
+            "file": "СертификатСоответсвияОООЭГЕОН.pdf"
         },
         {
             "id": 2,
             "title": "Лицензия МЧС",
-            "pictures":  [""],
-            "file": ""
+            "pictures":  ["rl1.png", "rl2.png"],
+            "file": "rl.pdf"
         },
         {
             "id": 3,
             "title": "Выписка СРО",
-            "pictures":  ["rl1.png", "rl2.png"],
-            "file": "rl.pdf"
+            "pictures":  [],
+            "file": ""
         }
     ]
 ]
