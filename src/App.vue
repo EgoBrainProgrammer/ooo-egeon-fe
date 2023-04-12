@@ -83,7 +83,7 @@ ul {
 
 .cardColor {
     /* background-color: rgba(200, 200, 200, 0.5) !important; */
-    background-color: rgba(200, 200, 200, 0.35) !important;
+    background-color: rgba(200, 200, 200, 0.9) !important;
     border-color: white !important;
 }
 
