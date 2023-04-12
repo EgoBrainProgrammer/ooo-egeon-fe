@@ -3,7 +3,7 @@
         <div class="d-flex justify-center">
             <v-card class="cardColor ma-2 ma-sm-8 pa-2 px-sm-12">
                 <div class="text-h4 text-lg-h2 text-center my-2 my-sm-16 font-weight-black">Контакты</div>
-                <div class="ma-lg-12">
+                <div class="ma-4 ma-lg-12">
                     <v-row v-for="(item, idx) in organization.filter(x => (/.+_h$/).exec(x.name) == null)" :key="idx"
                         class="my-2">
                         <!-- <v-chip class="bigchip text-body-1 text-lg-h4 font-weight-medium pa-3 ma-2 ma-sm-4 wsspan"
