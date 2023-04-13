@@ -95,4 +95,13 @@ ul {
     border-radius: 15px;
     border-width: 2px;
 }
+
+/* .v-img__img {
+
+} */
+
+.v-img__img--cover {
+    filter: blur(3px);
+    opacity: 0.2;
+}
 </style>

@@ -1,7 +1,8 @@
 <template>
     <v-parallax :src="`/pictures/work${Math.round(Math.random() * 4 + 1)}.jpg`" height="100%">
-        <div class="d-flex justify-center">
-            <v-card class="cardColor ma-1 ma-sm-8 px-2 px-sm-12">
+        <!-- <div class="d-flex justify-center">
+            <v-card class="cardColor ma-1 ma-sm-8 px-2 px-sm-12"> -->
+                <div class="ma-2 ma-sm-8 pa-2 px-sm-12 text-h3 wsspan font-weight-medium">
                 <div class="text-center text-h4 text-lg-h2 my-2 my-sm-16 font-weight-black">Наши заказчики</div>                
                 <!-- <v-row v-for="(consumer, idx) in consumers" :key="idx" class="my-2">
                     <v-chip class="bigchip text-body-1 text-lg-h4 font-weight-medium pa-3 ma-4 wsspan"
@@ -14,8 +15,9 @@
                         — {{ consumer.title }}
                     </div>
                 </template>
-            </v-card>
-        </div>
+            </div>
+            <!-- </v-card>
+        </div> -->
     </v-parallax>
 </template>
 
