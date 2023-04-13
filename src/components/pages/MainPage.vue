@@ -11,35 +11,33 @@
                 </div>
             </div>
         </div>
-        <div>
-            <v-container class="text-center wsspan">
-                <template v-for="(row, idx) in works" :key="idx">
-                    <v-row align="center">
-                        <v-col :cols="$isMobile ? 12 : cols" v-for="(col, icol) in row" :key="icol">
-                            <v-hover>
-                                <template v-slot:default="{ isHovering, prps }">
-                                    <v-card height="242" class="pointer" v-bind="prps" :elevation="isHovering ? 16 : 4"
-                                        @click="$router.push('/ourworks?work=' + col.id)">
-                                        <v-carousel cycle :show-arrows="false" hide-delimiters height="242">
-                                            <v-carousel-item v-for="(slide, i) in col.pictures" :key="i">
-                                                <v-sheet height="100%" tile>
-                                                    <div class="d-flex fill-height justify-center align-center text-start">
-                                                        <v-img :src="`/pictures/works/${slide}`" height="242" cover>
-                                                            <div class="h-100 d-flex align-end pa-4 wsspanw text-h6">
-                                                                {{ col.title }}
-                                                            </div>
-                                                        </v-img>
-                                                    </div>
-                                                </v-sheet>
-                                            </v-carousel-item>
-                                        </v-carousel>
-                                    </v-card>
-                                </template>
-                            </v-hover>
-                        </v-col>
-                    </v-row>
-                </template>
-            </v-container>
+        <div class="mt-4">
+            <template v-for="(row, idx) in works" :key="idx">
+                <v-row class="mx-2 mx-sm-16">
+                    <v-col :cols="$isMobile ? 12 : cols" v-for="(col, icol) in row" :key="icol">
+                        <v-hover>
+                            <template v-slot:default="{ isHovering, prps }">
+                                <v-card height="242" class="pointer" v-bind="prps" :elevation="isHovering ? 16 : 4"
+                                    @click="$router.push('/ourworks?work=' + col.id)">
+                                    <v-carousel cycle :show-arrows="false" hide-delimiters height="242">
+                                        <v-carousel-item v-for="(slide, i) in col.pictures" :key="i">
+                                            <v-sheet height="100%" tile>
+                                                <div class="d-flex fill-height justify-center align-center text-start">
+                                                    <v-img :src="`/pictures/works/${slide}`" height="242" cover>
+                                                        <div class="h-100 d-flex align-end pa-4 wsspanw text-h6">
+                                                            {{ col.title }}
+                                                        </div>
+                                                    </v-img>
+                                                </div>
+                                            </v-sheet>
+                                        </v-carousel-item>
+                                    </v-carousel>
+                                </v-card>
+                            </template>
+                        </v-hover>
+                    </v-col>
+                </v-row>
+            </template>
         </div>
     </v-parallax>
 </template>

@@ -12,6 +12,7 @@ import app from "@/main";
 import { ref, provide, onMounted } from "vue";
 import { useDisplay, useTheme } from "vuetify";
 import { ajaxGetStatic } from "@/ajax";
+import router from "@/router";
 
 //--Components--
 import Header from "@/components/pages/Header.vue";
@@ -96,12 +97,12 @@ ul {
     border-width: 2px;
 }
 
-/* .v-img__img {
-
+/* .v-img__img--cover:has(< .v-parallax) {
+    filter: v-bind(router.currentRoute.value.path == "/" ? null : 'blur(3px)');
+    opacity: v-bind(router.currentRoute.value.path == "/" ? null : '0.2');
 } */
-
-.v-img__img--cover {
+.v-parallax > .v-img__img--cover {
     filter: blur(3px);
-    opacity: 0.2;
+    opacity: 0.25;
 }
 </style>
