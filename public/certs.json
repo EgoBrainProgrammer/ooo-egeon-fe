@@ -15,7 +15,7 @@
         {
             "id": 3,
             "title": "Выписка СРО",
-            "pictures":  ["sro1.png", "sro2.png"],
+            "pictures":  ["sro1.png"],
             "file": "ВыпискаСРО.pdf"
         }
     ]
