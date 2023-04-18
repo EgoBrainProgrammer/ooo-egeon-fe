@@ -3,7 +3,7 @@
         <div class="ma-2 ma-sm-8 pa-2 px-sm-12 text-h3 wsspan font-weight-medium">
             <div class="text-center text-h4 text-lg-h2 my-2 my-sm-16 font-weight-black">Наши заказчики</div>
             <template v-for="(consumer, idx) in consumers" :key="idx">
-                <div class="my-4 my-sm-8 text-body-1 text-lg-h4 font-weight-medium wsspan text-justify">
+                <div class="my-4 my-sm-8 text-body-1 text-lg-h4 font-weight-medium wsspan text-center">
                     — {{ consumer.title }}
                 </div>
             </template>

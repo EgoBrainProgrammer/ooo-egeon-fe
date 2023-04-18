@@ -1,11 +1,11 @@
 <template>
-    <v-parallax :src="`/pictures/work${Math.round(Math.random() * 4 + 1)}.jpg`" height="100%">    
+    <v-parallax :src="`/pictures/work${Math.round(Math.random() * 4 + 1)}.jpg`" height="100%">
         <div class="ma-2 ma-sm-8 pa-2 px-sm-12 text-h3 wsspan font-weight-medium">
             <div class="text-center text-h4 text-lg-h2 my-2 my-sm-16 font-weight-black">Сертификаты и лицензии</div>
             <template v-for="(row, idx) in certs" :key="idx">
-                <v-row align="center">
+                <v-row>
                     <v-col :cols="$isMobile ? 12 : cols" v-for="(col, icol) in row" :key="icol">
-                        <v-hover>
+                        <!-- <v-hover>
                             <template v-slot:default="{ isHovering, prps }">
                                 <v-card height="242" class="pointer" v-bind="prps" :elevation="isHovering ? 16 : 4"
                                     @click="$store.dispatch('open', `/files/${col.file}`)">
@@ -20,13 +20,19 @@
                                                         </v-chip>
                                                     </div>
                                                 </v-img>
-
                                             </v-sheet>
                                         </v-carousel-item>
                                     </v-carousel>
                                 </v-card>
                             </template>
-                        </v-hover>
+                        </v-hover> -->
+                        <div class="d-flex justify-center">
+                            <v-img class="pointer"
+                                max-width="428"
+                                :src="`/pictures/certs/${col.pictures[0]}`"
+                                @click="$store.dispatch('open', `/files/${col.file}`)">
+                            </v-img>
+                        </div>
                     </v-col>
                 </v-row>
             </template>
